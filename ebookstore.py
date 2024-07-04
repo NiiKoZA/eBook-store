@@ -82,6 +82,8 @@ def search_books(conn):
         print(row)
 
 # List all books in store
+# Use {0}: {1} for .format function
+# Use row[1], row[2] to get column 2 and column 3
 def list_books(conn):
     cursor = conn.cursor()
     cursor.execute('''
