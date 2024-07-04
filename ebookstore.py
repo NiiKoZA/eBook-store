@@ -15,6 +15,8 @@ def create_table(conn):
     conn.commit()
 
 # Populate table with the data given
+# Create books variable to store data given
+# Use executemany to populate ebookstore.db
 def populate_table(conn):
     cursor = conn.cursor()
     books = [
